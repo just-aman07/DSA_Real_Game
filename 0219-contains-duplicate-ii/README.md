@@ -1,3 +1,20 @@
+<h3>
+	Intution
+</h3>
+<p>
+	
+
+We need to determine whether there are two equal elements whose indices differ by at most k.
+
+A brute force approach would compare every pair of elements and check:
+
+Are the values equal?
+Is the distance between their indices <= k?
+
+However, this takes O(n²) time and is too slow for large arrays.
+
+A better idea is to remember the last index where each number appeared. When we see the same number again, we simply check the distance between the current index and its previous index.
+</p>
 <h2><a href="https://leetcode.com/problems/contains-duplicate-ii">219. Contains Duplicate II</a></h2><h3>Easy</h3><hr><p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <code>true</code> <em>if there are two <strong>distinct indices</strong> </em><code>i</code><em> and </em><code>j</code><em> in the array such that </em><code>nums[i] == nums[j]</code><em> and </em><code>abs(i - j) &lt;= k</code>.</p>
 
 <p>&nbsp;</p>
